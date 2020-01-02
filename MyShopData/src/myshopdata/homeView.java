@@ -42,6 +42,7 @@ public class homeView extends javax.swing.JFrame {
         btnhome = new javax.swing.JLabel();
         btndata = new javax.swing.JLabel();
         btnaccount = new javax.swing.JLabel();
+        btnaccount1 = new javax.swing.JLabel();
         mainPanel = new javax.swing.JPanel();
         homepanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -50,6 +51,8 @@ public class homeView extends javax.swing.JFrame {
         accountPanel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         kButton1 = new keeptoo.KButton();
+        aboutPanel = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -141,6 +144,13 @@ public class homeView extends javax.swing.JFrame {
             }
         });
 
+        btnaccount1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/about.png"))); // NOI18N
+        btnaccount1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout menupanelLayout = new javax.swing.GroupLayout(menupanel);
         menupanel.setLayout(menupanelLayout);
         menupanelLayout.setHorizontalGroup(
@@ -148,6 +158,7 @@ public class homeView extends javax.swing.JFrame {
             .addGroup(menupanelLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount1)
                     .addComponent(btnaccount)
                     .addComponent(btndata)
                     .addComponent(btnhome))
@@ -162,7 +173,9 @@ public class homeView extends javax.swing.JFrame {
                 .addComponent(btndata)
                 .addGap(50, 50, 50)
                 .addComponent(btnaccount)
-                .addContainerGap(498, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(btnaccount1)
+                .addContainerGap(389, Short.MAX_VALUE))
         );
 
         bg.add(menupanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 100, 850));
@@ -260,6 +273,31 @@ public class homeView extends javax.swing.JFrame {
         );
 
         mainPanel.add(accountPanel, "card4");
+
+        aboutPanel.setBackground(new java.awt.Color(209, 216, 224));
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        jLabel4.setText("About We");
+        jLabel4.setPreferredSize(new java.awt.Dimension(182, 49));
+
+        javax.swing.GroupLayout aboutPanelLayout = new javax.swing.GroupLayout(aboutPanel);
+        aboutPanel.setLayout(aboutPanelLayout);
+        aboutPanelLayout.setHorizontalGroup(
+            aboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(aboutPanelLayout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1110, Short.MAX_VALUE))
+        );
+        aboutPanelLayout.setVerticalGroup(
+            aboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(aboutPanelLayout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(719, Short.MAX_VALUE))
+        );
+
+        mainPanel.add(aboutPanel, "card5");
 
         bg.add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 1390, 850));
 
@@ -360,6 +398,10 @@ public class homeView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_kButton1ActionPerformed
 
+    private void btnaccount1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnaccount1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -396,11 +438,13 @@ public class homeView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel aboutPanel;
     private javax.swing.JPanel accountPanel;
     private javax.swing.JPanel barpanel;
     private javax.swing.JPanel barpanel1;
     private keeptoo.KGradientPanel bg;
     private javax.swing.JLabel btnaccount;
+    private javax.swing.JLabel btnaccount1;
     private javax.swing.JLabel btndata;
     private javax.swing.JLabel btnhome;
     private javax.swing.JPanel dataPanel;
@@ -410,6 +454,7 @@ public class homeView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private keeptoo.KButton kButton1;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JLabel maximalize;
