@@ -8,6 +8,7 @@ package MyShopData;
 
 import java.awt.Frame;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -197,7 +198,17 @@ public class AboutView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMousePressed
-        System.exit(0);
+        int dialogBtn = JOptionPane.YES_NO_OPTION;
+        int dialogResult = JOptionPane.showConfirmDialog(this, "Apakah anda yakin ?", "PERINGATAN", dialogBtn);
+        
+        if (dialogResult==0){
+            //true
+            System.exit(0);
+        }
+            else {
+            
+            //false
+        }
     }//GEN-LAST:event_exitMousePressed
 
     private void minimalizeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_minimalizeMousePressed
