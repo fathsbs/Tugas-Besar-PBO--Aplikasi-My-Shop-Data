@@ -141,11 +141,11 @@
                               <Component id="btnaccount" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnaccount1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="btndata" alignment="1" min="-2" pref="270" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btnaccount1" max="32767" attributes="0"/>
+                              <Component id="btndata" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="313" max="32767" attributes="0"/>
@@ -164,12 +164,18 @@
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="75" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btndata" alignment="1" min="-2" pref="223" max="-2" attributes="0"/>
-                              <Component id="btnhome" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace pref="103" max="32767" attributes="0"/>
+                                  <Component id="btndata" min="-2" pref="223" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="btnhome" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnaccount" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="btnaccount1" alignment="1" min="-2" max="-2" attributes="0"/>
