@@ -205,8 +205,7 @@ public class AboutView extends javax.swing.JFrame {
             //true
             System.exit(0);
         }
-            else {
-            
+            else {     
             //false
         }
     }//GEN-LAST:event_exitMousePressed
