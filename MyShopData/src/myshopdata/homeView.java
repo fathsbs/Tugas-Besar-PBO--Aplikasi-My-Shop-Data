@@ -23,7 +23,8 @@ public class homeView extends javax.swing.JFrame {
         initComponents();
         homeView.this.getRootPane().setBorder(new LineBorder(Color.yellow));
     }
-    int xx,xy;
+    int xx, xy;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -36,23 +37,37 @@ public class homeView extends javax.swing.JFrame {
         bg = new keeptoo.KGradientPanel();
         barpanel1 = new javax.swing.JPanel();
         exit1 = new javax.swing.JLabel();
-        maximalize1 = new javax.swing.JLabel();
         minimalize1 = new javax.swing.JLabel();
-        menupanel = new keeptoo.KGradientPanel();
+        mainPanel = new javax.swing.JPanel();
+        homepanel = new javax.swing.JPanel();
         btnhome = new javax.swing.JLabel();
         btndata = new javax.swing.JLabel();
         btnaccount = new javax.swing.JLabel();
         btnaccount1 = new javax.swing.JLabel();
-        mainPanel = new javax.swing.JPanel();
-        homepanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         dataPanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        menupanel = new keeptoo.KGradientPanel();
+        btnhome2 = new javax.swing.JLabel();
+        btndata1 = new javax.swing.JLabel();
+        btnaccount2 = new javax.swing.JLabel();
+        btnaccount3 = new javax.swing.JLabel();
         accountPanel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         kButton1 = new keeptoo.KButton();
+        menupanel2 = new keeptoo.KGradientPanel();
+        btnhome4 = new javax.swing.JLabel();
+        btndata2 = new javax.swing.JLabel();
+        btnaccount4 = new javax.swing.JLabel();
+        btnaccount5 = new javax.swing.JLabel();
         aboutPanel = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        menupanel3 = new keeptoo.KGradientPanel();
+        btnhome5 = new javax.swing.JLabel();
+        btndata3 = new javax.swing.JLabel();
+        btnaccount6 = new javax.swing.JLabel();
+        btnaccount7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -81,13 +96,6 @@ public class homeView extends javax.swing.JFrame {
             }
         });
 
-        maximalize1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/maximize.png"))); // NOI18N
-        maximalize1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                maximalize1MousePressed(evt);
-            }
-        });
-
         minimalize1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/minimize.png"))); // NOI18N
         minimalize1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -100,12 +108,10 @@ public class homeView extends javax.swing.JFrame {
         barpanel1Layout.setHorizontalGroup(
             barpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, barpanel1Layout.createSequentialGroup()
-                .addGap(1363, 1363, 1363)
-                .addComponent(minimalize1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(maximalize1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(exit1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(1425, 1425, 1425)
+                .addComponent(minimalize1, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(exit1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                 .addContainerGap())
         );
         barpanel1Layout.setVerticalGroup(
@@ -114,95 +120,90 @@ public class homeView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(barpanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(exit1)
-                    .addComponent(minimalize1)
-                    .addComponent(maximalize1))
+                    .addComponent(minimalize1))
                 .addGap(6, 6, 6))
         );
 
-        bg.add(barpanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1492, -1));
+        bg.add(barpanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-330, 0, 1520, 50));
 
-        menupanel.setOpaque(false);
+        mainPanel.setBackground(new java.awt.Color(209, 216, 224));
+        mainPanel.setOpaque(false);
+        mainPanel.setLayout(new java.awt.CardLayout());
 
-        btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/home.png"))); // NOI18N
+        homepanel.setBackground(new java.awt.Color(209, 216, 224));
+        homepanel.setOpaque(false);
+
+        btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/home (1).png"))); // NOI18N
         btnhome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnhomeMouseClicked(evt);
             }
         });
 
-        btndata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/online-shop.png"))); // NOI18N
+        btndata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/online-shop_1.png"))); // NOI18N
         btndata.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btndataMouseClicked(evt);
             }
         });
 
-        btnaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/account.png"))); // NOI18N
+        btnaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/account_1.png"))); // NOI18N
         btnaccount.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnaccountMouseClicked(evt);
             }
         });
 
-        btnaccount1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/about.png"))); // NOI18N
+        btnaccount1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/info.png"))); // NOI18N
         btnaccount1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnaccount1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout menupanelLayout = new javax.swing.GroupLayout(menupanel);
-        menupanel.setLayout(menupanelLayout);
-        menupanelLayout.setHorizontalGroup(
-            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menupanelLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnaccount1)
-                    .addComponent(btnaccount)
-                    .addComponent(btndata)
-                    .addComponent(btnhome))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-        menupanelLayout.setVerticalGroup(
-            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menupanelLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(btnhome)
-                .addGap(50, 50, 50)
-                .addComponent(btndata)
-                .addGap(50, 50, 50)
-                .addComponent(btnaccount)
-                .addGap(50, 50, 50)
-                .addComponent(btnaccount1)
-                .addContainerGap(389, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 44)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Selamat Datang di");
 
-        bg.add(menupanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 100, 850));
-
-        mainPanel.setBackground(new java.awt.Color(209, 216, 224));
-        mainPanel.setLayout(new java.awt.CardLayout());
-
-        homepanel.setBackground(new java.awt.Color(209, 216, 224));
-
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-        jLabel1.setText("Home");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/msd.png"))); // NOI18N
 
         javax.swing.GroupLayout homepanelLayout = new javax.swing.GroupLayout(homepanel);
         homepanel.setLayout(homepanelLayout);
         homepanelLayout.setHorizontalGroup(
             homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homepanelLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(182, 182, 182)
+                .addGroup(homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnhome)
+                    .addComponent(btnaccount))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btndata, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(159, 159, 159))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homepanelLayout.createSequentialGroup()
+                .addContainerGap(313, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(1235, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(291, 291, 291))
         );
         homepanelLayout.setVerticalGroup(
             homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homepanelLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jLabel1)
-                .addContainerGap(721, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addGroup(homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btndata, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnhome, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(110, 110, 110)
+                .addGroup(homepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnaccount1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(67, 67, 67))
         );
 
         mainPanel.add(homepanel, "card2");
@@ -212,21 +213,82 @@ public class homeView extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jLabel2.setText("Data Produk");
 
+        menupanel.setOpaque(false);
+
+        btnhome2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/home.png"))); // NOI18N
+        btnhome2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhome2MouseClicked(evt);
+            }
+        });
+
+        btndata1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/online-shop.png"))); // NOI18N
+        btndata1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btndata1MouseClicked(evt);
+            }
+        });
+
+        btnaccount2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/account.png"))); // NOI18N
+        btnaccount2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount2MouseClicked(evt);
+            }
+        });
+
+        btnaccount3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/about_1.png"))); // NOI18N
+        btnaccount3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout menupanelLayout = new javax.swing.GroupLayout(menupanel);
+        menupanel.setLayout(menupanelLayout);
+        menupanelLayout.setHorizontalGroup(
+            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanelLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount3)
+                    .addComponent(btnaccount2)
+                    .addComponent(btndata1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnhome2))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        menupanelLayout.setVerticalGroup(
+            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(btnhome2)
+                .addGap(39, 39, 39)
+                .addComponent(btndata1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(btnaccount2)
+                .addGap(45, 45, 45)
+                .addComponent(btnaccount3)
+                .addContainerGap(385, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout dataPanelLayout = new javax.swing.GroupLayout(dataPanel);
         dataPanel.setLayout(dataPanelLayout);
         dataPanelLayout.setHorizontalGroup(
             dataPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dataPanelLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addComponent(menupanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addContainerGap(1080, Short.MAX_VALUE))
+                .addContainerGap(801, Short.MAX_VALUE))
         );
         dataPanelLayout.setVerticalGroup(
             dataPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dataPanelLayout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addComponent(jLabel2)
-                .addContainerGap(717, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(dataPanelLayout.createSequentialGroup()
+                .addComponent(menupanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         mainPanel.add(dataPanel, "card3");
@@ -248,28 +310,89 @@ public class homeView extends javax.swing.JFrame {
             }
         });
 
+        menupanel2.setOpaque(false);
+
+        btnhome4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/home.png"))); // NOI18N
+        btnhome4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhome4MouseClicked(evt);
+            }
+        });
+
+        btndata2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/online-shop.png"))); // NOI18N
+        btndata2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btndata2MouseClicked(evt);
+            }
+        });
+
+        btnaccount4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/account.png"))); // NOI18N
+        btnaccount4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount4MouseClicked(evt);
+            }
+        });
+
+        btnaccount5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/about_1.png"))); // NOI18N
+        btnaccount5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout menupanel2Layout = new javax.swing.GroupLayout(menupanel2);
+        menupanel2.setLayout(menupanel2Layout);
+        menupanel2Layout.setHorizontalGroup(
+            menupanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanel2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(menupanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount5)
+                    .addComponent(btnaccount4)
+                    .addComponent(btndata2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnhome4))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        menupanel2Layout.setVerticalGroup(
+            menupanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanel2Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(btnhome4)
+                .addGap(39, 39, 39)
+                .addComponent(btndata2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(btnaccount4)
+                .addGap(45, 45, 45)
+                .addComponent(btnaccount5)
+                .addContainerGap(385, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout accountPanelLayout = new javax.swing.GroupLayout(accountPanel);
         accountPanel.setLayout(accountPanelLayout);
         accountPanelLayout.setHorizontalGroup(
             accountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(accountPanelLayout.createSequentialGroup()
+                .addComponent(menupanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(accountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(accountPanelLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel3))
+                        .addGap(165, 165, 165)
+                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(accountPanelLayout.createSequentialGroup()
-                        .addGap(355, 355, 355)
-                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(517, Short.MAX_VALUE))
+                        .addGap(72, 72, 72)
+                        .addComponent(jLabel3)))
+                .addContainerGap(407, Short.MAX_VALUE))
         );
         accountPanelLayout.setVerticalGroup(
             accountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(accountPanelLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
+                .addGap(71, 71, 71)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 612, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addGap(105, 105, 105))
+            .addGroup(accountPanelLayout.createSequentialGroup()
+                .addComponent(menupanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         mainPanel.add(accountPanel, "card4");
@@ -280,32 +403,93 @@ public class homeView extends javax.swing.JFrame {
         jLabel4.setText("About We");
         jLabel4.setPreferredSize(new java.awt.Dimension(182, 49));
 
+        menupanel3.setOpaque(false);
+
+        btnhome5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/home.png"))); // NOI18N
+        btnhome5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhome5MouseClicked(evt);
+            }
+        });
+
+        btndata3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/online-shop.png"))); // NOI18N
+        btndata3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btndata3MouseClicked(evt);
+            }
+        });
+
+        btnaccount6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/account.png"))); // NOI18N
+        btnaccount6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount6MouseClicked(evt);
+            }
+        });
+
+        btnaccount7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/myshopdata/img/about_1.png"))); // NOI18N
+        btnaccount7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnaccount7MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout menupanel3Layout = new javax.swing.GroupLayout(menupanel3);
+        menupanel3.setLayout(menupanel3Layout);
+        menupanel3Layout.setHorizontalGroup(
+            menupanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanel3Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(menupanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnaccount7)
+                    .addComponent(btnaccount6)
+                    .addComponent(btndata3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnhome5))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        menupanel3Layout.setVerticalGroup(
+            menupanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(menupanel3Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(btnhome5)
+                .addGap(39, 39, 39)
+                .addComponent(btndata3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(btnaccount6)
+                .addGap(45, 45, 45)
+                .addComponent(btnaccount7)
+                .addContainerGap(385, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout aboutPanelLayout = new javax.swing.GroupLayout(aboutPanel);
         aboutPanel.setLayout(aboutPanelLayout);
         aboutPanelLayout.setHorizontalGroup(
             aboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(aboutPanelLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, aboutPanelLayout.createSequentialGroup()
+                .addComponent(menupanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(95, 95, 95)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1110, Short.MAX_VALUE))
+                .addContainerGap(769, Short.MAX_VALUE))
         );
         aboutPanelLayout.setVerticalGroup(
             aboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, aboutPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(menupanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(aboutPanelLayout.createSequentialGroup()
-                .addGap(82, 82, 82)
+                .addGap(139, 139, 139)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(719, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         mainPanel.add(aboutPanel, "card5");
 
-        bg.add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 1390, 850));
+        bg.add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1190, 850));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -313,6 +497,7 @@ public class homeView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void barpanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barpanel1MousePressed
@@ -321,14 +506,10 @@ public class homeView extends javax.swing.JFrame {
     }//GEN-LAST:event_barpanel1MousePressed
 
     private void barpanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barpanel1MouseClicked
-        if (evt.getClickCount() == 2 &&!evt.isConsumed())
-        {
-            if (homeView.this.getExtendedState()==MAXIMIZED_BOTH)
-            {
+        if (evt.getClickCount() == 2 && !evt.isConsumed()) {
+            if (homeView.this.getExtendedState() == MAXIMIZED_BOTH) {
                 homeView.this.setExtendedState(JFrame.NORMAL);
-            }
-            else
-            {
+            } else {
                 homeView.this.setExtendedState(WIDTH);
             }
         }
@@ -344,37 +525,15 @@ public class homeView extends javax.swing.JFrame {
         homeView.this.setState(Frame.ICONIFIED);
     }//GEN-LAST:event_minimalize1MousePressed
 
-    private void maximalize1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maximalize1MousePressed
-        if (homeView.this.getExtendedState()==MAXIMIZED_BOTH)
-        {
-            homeView.this.setExtendedState(JFrame.NORMAL);
-        }
-        else
-        {
-            homeView.this.setExtendedState(MAXIMIZED_BOTH);
-        }
-    }//GEN-LAST:event_maximalize1MousePressed
-
     private void exit1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exit1MousePressed
         System.exit(0);
     }//GEN-LAST:event_exit1MousePressed
-
-    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
-        mainPanel.removeAll();
-        mainPanel.repaint();
-        mainPanel.revalidate();
-        
-        //add
-        mainPanel.add(homepanel);
-        mainPanel.repaint();
-        mainPanel.revalidate();
-    }//GEN-LAST:event_btnhomeMouseClicked
 
     private void btndataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndataMouseClicked
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         //add
         mainPanel.add(dataPanel);
         mainPanel.repaint();
@@ -385,7 +544,7 @@ public class homeView extends javax.swing.JFrame {
         mainPanel.removeAll();
         mainPanel.repaint();
         mainPanel.revalidate();
-        
+
         //add
         mainPanel.add(accountPanel);
         mainPanel.repaint();
@@ -401,6 +560,129 @@ public class homeView extends javax.swing.JFrame {
     private void btnaccount1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btnaccount1MouseClicked
+
+    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(homepanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnhomeMouseClicked
+
+    private void btndata1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndata1MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(dataPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btndata1MouseClicked
+
+    private void btnaccount2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount2MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(accountPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnaccount2MouseClicked
+
+    private void btnaccount3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnaccount3MouseClicked
+
+    private void btndata2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndata2MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(dataPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btndata2MouseClicked
+
+    private void btnaccount4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount4MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(accountPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnaccount4MouseClicked
+
+    private void btnaccount5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnaccount5MouseClicked
+
+    private void btndata3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndata3MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(dataPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btndata3MouseClicked
+
+    private void btnaccount6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount6MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(accountPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnaccount6MouseClicked
+
+    private void btnaccount7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnaccount7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnaccount7MouseClicked
+
+    private void btnhome4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhome4MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(homepanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnhome4MouseClicked
+
+    private void btnhome2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhome2MouseClicked
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        //add
+        mainPanel.add(homepanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnhome2MouseClicked
+
+    private void btnhome5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhome5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnhome5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -440,27 +722,37 @@ public class homeView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel aboutPanel;
     private javax.swing.JPanel accountPanel;
-    private javax.swing.JPanel barpanel;
     private javax.swing.JPanel barpanel1;
     private keeptoo.KGradientPanel bg;
     private javax.swing.JLabel btnaccount;
     private javax.swing.JLabel btnaccount1;
+    private javax.swing.JLabel btnaccount2;
+    private javax.swing.JLabel btnaccount3;
+    private javax.swing.JLabel btnaccount4;
+    private javax.swing.JLabel btnaccount5;
+    private javax.swing.JLabel btnaccount6;
+    private javax.swing.JLabel btnaccount7;
     private javax.swing.JLabel btndata;
+    private javax.swing.JLabel btndata1;
+    private javax.swing.JLabel btndata2;
+    private javax.swing.JLabel btndata3;
     private javax.swing.JLabel btnhome;
+    private javax.swing.JLabel btnhome2;
+    private javax.swing.JLabel btnhome4;
+    private javax.swing.JLabel btnhome5;
     private javax.swing.JPanel dataPanel;
-    private javax.swing.JLabel exit;
     private javax.swing.JLabel exit1;
     private javax.swing.JPanel homepanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private keeptoo.KButton kButton1;
     private javax.swing.JPanel mainPanel;
-    private javax.swing.JLabel maximalize;
-    private javax.swing.JLabel maximalize1;
     private keeptoo.KGradientPanel menupanel;
-    private javax.swing.JLabel minimalize;
+    private keeptoo.KGradientPanel menupanel2;
+    private keeptoo.KGradientPanel menupanel3;
     private javax.swing.JLabel minimalize1;
     // End of variables declaration//GEN-END:variables
 }
